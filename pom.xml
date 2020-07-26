@@ -15,8 +15,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 
     <!--新增项目，用来设置版本号-->
     <srping.version>5.2.8.RELEASE</srping.version>
@@ -211,16 +211,7 @@
         <groupId>org.mybatis.generator</groupId>
         <artifactId>mybatis-generator-maven-plugin</artifactId>
         <version>1.3.2</version>
-        <dependencies>
-          <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.29</version>
-          </dependency>
-        </dependencies>
         <configuration>
-          <!-- mybatis用于生成代码的配置文件 -->
-          <configurationFile>src/main/resources/generatorConfig.xml</configurationFile>
           <verbose>true</verbose>
           <overwrite>true</overwrite>
         </configuration>

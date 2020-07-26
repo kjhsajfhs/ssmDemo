@@ -1,22 +1,27 @@
 package com.demo.model;
 
+import java.util.Date;
+
 public class User {
     private Integer id;
 
-    private String email;
+    private String name;
 
-    private String username;
+    private String pwd;
 
-    private String role;
+    private String headImg;
 
-    private String mobile;
+    private String phone;
 
-    public User(Integer id, String email, String username, String role, String mobile) {
+    private Date createTime;
+
+    public User(Integer id, String name, String pwd, String headImg, String phone, Date createTime) {
         this.id = id;
-        this.email = email;
-        this.username = username;
-        this.role = role;
-        this.mobile = mobile;
+        this.name = name;
+        this.pwd = pwd;
+        this.headImg = headImg;
+        this.phone = phone;
+        this.createTime = createTime;
     }
 
     public User() {
@@ -31,35 +36,43 @@ public class User {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getName() {
+        return name;
     }
 
-    public void setEmail(String email) {
-        this.email = email == null ? null : email.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public String getUsername() {
-        return username;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setPwd(String pwd) {
+        this.pwd = pwd == null ? null : pwd.trim();
     }
 
-    public String getRole() {
-        return role;
+    public String getHeadImg() {
+        return headImg;
     }
 
-    public void setRole(String role) {
-        this.role = role == null ? null : role.trim();
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg == null ? null : headImg.trim();
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile == null ? null : mobile.trim();
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

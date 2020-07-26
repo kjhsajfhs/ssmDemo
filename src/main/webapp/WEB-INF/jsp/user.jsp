@@ -5,9 +5,9 @@
 </head>
 <body>
 id:${user.id}<br/>
-email:${user.email}<br/>
-username:${user.username}<br/>
-role:${user.role}<br/>
-mobile:${user.mobile}<br/>
+name:${user.name}<br/>
+pwd:${user.pwd}<br/>
+headImg:${user.headImg}<br/>
+phone:${user.phone}<br/>
 </body>
 </html>
