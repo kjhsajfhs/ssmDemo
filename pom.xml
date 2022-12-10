@@ -19,7 +19,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
 
     <!--新增项目，用来设置版本号-->
-    <srping.version>5.2.8.RELEASE</srping.version>
+    <srping.version>6.0.0</srping.version>
     <mybatis.version>3.2.8</mybatis.version>
     <slf4j.version>1.7.12</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
